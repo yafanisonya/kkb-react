@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import logo from './logo192.png'
 import styles from "./indexModule.css"
+import App from './App'
+
 const name = "fanison";
 const obj = {
   firstName: 'Harry',
@@ -33,5 +35,5 @@ const jsx = <div>
   <img src={logo} className={styles.logo} style={{ width: "50px", height: "50px" }} ></img>
 </div>
 
-ReactDOM.render(jsx, document.getElementById("root"))
-
+// ReactDOM.render(jsx, document.getElementById("root"))
+ReactDOM.render(<App />, document.getElementById("root"))
